@@ -6,7 +6,7 @@
 /*   By: crojano- <crojano-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/21 20:14:06 by crojano-          #+#    #+#             */
-/*   Updated: 2022/04/21 20:50:57 by crojano-         ###   ########.fr       */
+/*   Updated: 2022/04/25 18:59:59 by crojano-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,9 @@
 
 int	ft_isalpha(int c);
 int	ft_isdigit(int c);
-int ft_isalnum(int c);
+int	ft_isalnum(int c);
+int	ft_isascii(int c);
+int	ft_isprint(int c);
+int	ft_strlen(const char *s);
 
 #endif
