@@ -1,29 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: crojano- <crojano-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/21 20:14:06 by crojano-          #+#    #+#             */
-/*   Updated: 2022/04/25 19:23:14 by crojano-         ###   ########.fr       */
+/*   Created: 2022/04/28 20:01:22 by crojano-          #+#    #+#             */
+/*   Updated: 2022/04/28 20:01:22 by crojano-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
 
-# include <stdlib.h>
+void	*ft_memcpy(void *dst, const void *src, size_t n)
+{
+	unsigned char	*tmp;
+	unsigned char	*src_tmp;
 
-int		ft_isalpha(int c);
-int		ft_isdigit(int c);
-int		ft_isalnum(int c);
-int		ft_isascii(int c);
-int		ft_isprint(int c);
-int		ft_strlen(const char *s);
-void	*ft_memset(void *b, int c, size_t len);
-void	ft_bzero(void *s, size_t n);
-void	*ft_memcpy(void *dst, const void *src, size_t n);
-void	*ft_memmove(void *dst, const void *src, size_t len);
-
-#endif
+	if (dst == 0 && src == 0)
+		return (0);
+	tmp = (unsigned char *) dst;
+	src_tmp = (unsigned char *) src;
+	while (n > 0)
+	{
+		*tmp++ = *src_tmp++;
+		n--;
+	}
+	return (dst);
+}
