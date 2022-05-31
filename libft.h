@@ -6,11 +6,11 @@
 /*   By: crojano- <crojano-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/21 20:14:06 by crojano-          #+#    #+#             */
-/*   Updated: 2022/04/25 19:23:14 by crojano-         ###   ########.fr       */
+/*   Updated: 2022/05/13 17:58:02 by crojano-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# ifndef LIBFT_H
+#ifndef LIBFT_H
 # define LIBFT_H
 
 # include <stdlib.h>
@@ -51,4 +51,4 @@ void			ft_putendl_fd(char *s, int fd);
 void			ft_putnbr_fd(int n, int fd);
 
 
-# endif
+#endif
